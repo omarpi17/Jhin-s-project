@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+    <header>
+      <div class="nav navi">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="navimg">
+            <img src="media/pngwing.com_2.png" alt="">
+          </div>
+
+        </div>
+        <div class="searchPlace">
+          <form class="d-flex">
+              <input type="search" class="form-control searchh" id="serchproduct" placeholder="Search" onkeyup="search(this.value)">
+          
+      <div class="selectcontainer">
+      <div class="custom-select">
+        <div class="select-header">
+          <span class="selected-option">categories</span>
+          <i class="arrow down"></i>
+        </div>
+        <ul class="options">
+          <li class="option">furniture</li>
+          <li class="option">clothes</li>
+          <li class="option">electronics</li>
+          <li class="option">arts and collectables</li>
+          <li class="option">other</li>
+        </ul>
+      </div>
+    </div>
+  </form>
+    </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span><i class="fa-solid fa-lines-leaning" style="color: #000000;font-size: 30px;"></i></span>
+
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a class="nav-link active" aria-current="page" href="home.html"><i class="fas fas fa-home"></i> Home</a>
+          <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-user"></i> Admin</a>
+          <a class="nav-link active" aria-current="page" href="shop.html"><i class="fa-solid fas fa-shopping-cart"></i> Shop</a>
+          <a class="nav-link active" aria-current="page" href="about.html"><i class="fa-solid fas fas fa-comments"></i> About us</a>
+          <a class="nav-link active cart" aria-current="page" href="cart.html"><i class="fa-solid fa-bag-shopping"></i> Cart <span id="noi">0</span></a>
+        </div>
+      </div>
+      
+      <nav class="navbar navbar-expand-sm navbar-light navi">
+        <div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navi secnav">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" id="CatAll"> all</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" id="CatClothes"> clothes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" id="CatElec"> electronics</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" id="CatShoes"> shoes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" id="CatFurniture"> furniture</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" id="CatArt"> art</a>
+                </li>
+
+
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+
+
+    <!-- Shop Cards Section -->
+    <section class="slid">
+      <div class="slider">
+
+        <img src="media/Shop/Lamp3.jpg" alt="Image 1" class="slide">
+        <img src="media/Shop/VR.jpg" alt="Image 2" class="slide">
+        <img src="media/Shop/Laptop1.jpg" alt="Image 3" class="slide">
+        <img src="media/Shop/lamp1.jpg" alt="Image 3" class="slide">
+        <img src="media/Shop/PS.jpg" alt="Image 3" class="slide">
+        <div class="SliderContent">
+          <h3>All You Want In One Place</h3>
+          <h2>All You Want at <span>Jhin's</span></h2>
+
+        </div>
+</div>
+  
+    </section>
+  
+  <!-- Shop Cards Section -->
+  <section class="ShopCards py-3">
+    <div class="container-x">
+      <div class="row mb-lg-4 mb-md-2">
+        <div class="col-lg-9 col-md-12 mb-md-2 col-sm-12 mb-sm-2">
+          <div class="HeadCard" id="BigCard">
+            <div class="imgHolder">
+              <img src="media/1.png" alt="">
+              <div class="CardContent">
+                <h3>Watch Wearable Device</h3>
+                <p>Which can vary depending<br> on the brand and model electronic device.</p>
+                <a href="#ShopList">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+              </div>  
+            </div>
+          </div> 
+          
+        </div>
+
+        <div class="col-lg-3 col-md-12 col-sm-12 mb-sm-2">
+          <div class="row flex-lg-column flex-md-row justify-content-between" id="CardsRow">
+            <div class="col-lg-12 col-md-6 col-sm-6">
+             <div class="HeadCard">
+                <div class="imgHolder">
+                <img src="media/3_d8b498cd-bbca-40ec-a42d-280b485fb91a.png" alt="">
+                <div class="CardContent">
+                  <h3>Special Discount</h3>
+                  <p>UP TO 50% OFF</p>
+                  <a href="#ShopList">Shop Now</a>
+                </div>  
+              </div>
+             </div>
+            
+            </div>
+    
+            <div class="col-lg-12 col-md-6 col-sm-6">
+             <div class="HeadCard">
+                <div class="imgHolder">
+                <img src="media/4_47ca1fa7-ee5e-4e29-b9ff-5df81e07e87c.png" alt="">
+                <div class="CardContent">
+                  <h3>Hot Deals</h3>
+                  <p>UP TO 30% OFF</p>
+                  <a href="#ShopList">Shop Now</a>
+                </div>  
+              </div>
+             </div>
+            
+
+            </div>  
+
+          </div>
+  
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6 mb-sm-2">
+         <div class="HeadCard LowerCards">
+            <div class="imgHolder">
+            <img src="media/Gaming_pc.png" alt="">
+            <div class="CardContent">
+              <h3>Hero PC</h3>
+              <a href="#ShopList">Shop Now</a>
+            </div>
+              
+          </div>
+         </div>
+        
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-sm-2">
+         <div class="HeadCard LowerCards">
+            <div class="imgHolder">
+            <img src="media/ipad.png" alt="">
+            <div class="CardContent">
+              <h3>Apple IPad</h3>
+              <a href="#ShopList">Shop Now</a>
+            </div>
+  
+          </div>
+         </div>
+        
+
+        </div>
+
+
+        <div class="col-md-4 col-sm-6 mb-sm-2 InvisibiltyOn">
+         <div class="HeadCard LowerCards">
+            <div class="imgHolder">
+            <img src="media/Smart_watch_ab4c738f-94be-4278-9b3c-95c7fc0e2845.png" alt="">
+            <div class="CardContent">
+              <h3>Smart Watch</h3>
+              <a href="#ShopList">Shop Now</a>
+            </div>  
+          </div>
+         </div>
+        
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="ios">
+        <div class="container-x">
+            <div class="row blackbox">
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="cards cards1 flip-card">
+                  <div id="content">
+                    <div id="blurer"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div id="article">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="media/pngwing.com_2.png" alt="">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="media/Shop/Wagha-controller.png" alt="">
+                          <h2>PS5 Controller</h2>
+                          <button class="comingSoon"><i class="fa-solid fas fa-spinner"></i> coming soon</button>
+                        </div>
+                    </div>
+                    </div>
+                  </div>               
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="cards cards1 flip-card">
+                <div id="content">
+                  <div id="blurer"></div>
+                  <div class="blob"></div>
+                  <div class="blob"></div>
+                  <div class="blob"></div>
+                  <div class="blob"></div>
+                  <div id="article">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="media/pngwing.com_2.png" alt="">
+                      </div>
+                      <div class="flip-card-back">
+                        <img src="media/Shop/Wagha-Cusion.png" alt="">
+                        <h2>Vagrant Cusion</h2>
+                        <button class="comingSoon"><i class="fa-solid fas fa-spinner"></i> coming soon</button>
+                      </div>
+                  </div>
+                  </div>
+                </div>               
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="cards cards1 flip-card">
+              <div id="content">
+                <div id="blurer"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div id="article">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="media/pngwing.com_2.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="media/Shop/Wagha-lamp.png" alt="">
+                      <h2>Radiant Lamp</h2>
+                      <button class="comingSoon"><i class="fa-solid fas fa-spinner"></i> coming soon</button>
+                    </div>
+                </div>
+                </div>
+              </div>               
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="cards cards1 flip-card">
+            <div id="content">
+              <div id="blurer"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div class="blob"></div>
+              <div id="article">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="media/pngwing.com_2.png" alt="">
+                  </div>
+                  <div class="flip-card-back">
+                    <img src="media/Shop/Wagha-Chair2.png" alt="">
+                    <h2>Prom Chair</h2>
+                    <button class="comingSoon"><i class="fa-solid fas fa-spinner"></i> coming soon</button>
+                  </div>
+              </div>
+              </div>
+            </div>               
+          </div>
+      </div>
+<div class="LightMeHolder">
+        <button id="light">Light Me
+          <div class="star-1">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+          </div>
+          <div class="star-2">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+          </div>
+          <div class="star-3">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+          </div>
+          <div class="star-4">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+          </div>
+          <div class="star-5">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+          </div>
+          <div class="star-6">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+          </div>
+        </button>
+  
+      </div>
+      
+            </div>
+        </div>
+      </section>
+      
+
+  <section class="productshop">
+    <div class="container">
+    <div class="row" id="ShopList">
+
+     </div><!-- row end -->
+     </div> <!-- container end -->
+     </section><!-- productshop end -->
+
+
+
+     <!-- last section -->
+     <section class="lastSection py-5">
+      <div class="container-x">
+        <div class="row">
+
+                  <div class="col-md-6 col-sm-12 mb-sm-3">
+         <div class="HeadCard LowerCards">
+            <div class="imgHolder">
+            <img src="media/111_1_f5d139ec-669d-416f-8ccc-399f0e120ce7.png" alt="">
+            <div class="CardContent">
+              <p>UP TO 75% OFF!</p>
+              <h3>Unbeatable Discounts</h3>
+              <a href="#ShopList">Shop Now</a>
+            </div>
+              
+          </div>
+         </div>
+        
+        </div>
+
+
+        <div class="col-md-6 col-sm-12">
+          <div class="HeadCard LowerCards">
+             <div class="imgHolder">
+             <img src="media/Frame_7.png" alt="">
+             <div class="CardContent">
+               <p>Hurry UP! On Sale</p>
+               <h3>Massive Fashion Sale</h3>
+               <a href="#ShopList">Shop Now</a>
+
+             </div>
+               
+           </div>
+          </div>
+         
+         </div>
+ 
+
+        </div>
+      </div>
+
+
+     </section>
+
+
+     <!-- last section -->
+             
+      <!-- footer -->
+      <section class="end">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="end-img">
+                        <img src="media/pngwing.com_2.png" alt="">
+                    </div>
+                    <p>Elementum nisi quis eleifend quam adipiscing. Cursus metus lorem aliquam eleifend mi in nulla posuere sollicitudin lorem.</p>
+                    <div class="first-iconset">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+          
+                    <h5>Contact information</h5>
+            
+                    <div class="cinfo"><i class="fa-solid fa-phone"></i> <p>+20 112 113 3410<br> +20 128 012 1253</p></div> 
+                    <div class="cinfo"><i class="fa-solid fa-location-dot"></i><p>211 Lehner Valleys Apt. 287<br> Harrisstad</p></div>
+                    <div class="cinfo"><i class="fa-solid fa-clock"></i><p>Jhin's@gmail.site<br>  store@cannabis.site</p></div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h5>shop products</h5>
+                    <div class="sp">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">furniture</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">electronics</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">clothes</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">Art</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">shop all</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h5>instagram</h5>
+                    <div class="row last-album">
+                        <div class="col col-xl-4 col-lg-6 col-md-4 col-sm-4"><img src="media/Shop/Carpet1.jpg" alt=""></div>
+                        <div class="col col-xl-4 col-lg-6 col-md-4 col-sm-4"><img src="media/Shop/Controller2.jpg" alt=""></div>
+                        <div class="col col-xl-4 col-lg-6 col-md-4 col-sm-4"><img src="media/Shop/Sofa4.jpg" alt=""></div>
+                        <div class="col col-xl-4 col-lg-6 col-md-4 col-sm-4"><img src="media/Shop/lamp1.jpg" alt=""></div>
+                        <div class="col col-xl-4 col-lg-6 col-md-4 col-sm-4"><img src="media/Shop/Wagha-Chair2.png" alt=""></div>
+                        <div class="col col-xl-4 col-lg-6 col-md-4 col-sm-4"><img src="media/Shop/shoes4.jpg" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="JS/shop.js"></script>
+</body>
+</html>

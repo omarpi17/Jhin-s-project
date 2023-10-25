@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhin's-Cart</title>
+    <link rel="shortcut icon" href="media/pngwing.com_2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cart.css">
+  </head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light  navi">
+          <div class="navimg">
+          <img src="media/pngwing.com_2.png" alt="">
+          </div>
+          <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navi">
+                <li class="nav-item">
+                <a class="nav-link active bn632-hover bn21" aria-current="page" href="shop.html"> <i class="fa-regular fas fa-shopping-cart"></i>  back to shop</a>             
+                </li>
+            </ul>
+          </div>
+    </nav>
+</header>
+    
+<section class="shoppingCart ">
+    <div class="container-fluid">
+    <div class="cartHeader">
+          <h1 >Shopping Cart</h1>
+          
+    </div>
+    <div class="productHolder">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8">
+              <table class="table text-center ">
+                <thead>
+                  <th>product details</th>
+                  <th>amount</th>
+                  <th>prize</th>
+                  <th>remove </th>
+                </thead>
+                <tbody id="CartList">
+
+                </tbody>
+              </table>
+            </div>
+            <div class="col-xl-3 col-lg-4">
+            <div class="checkOut">
+              <div class="checkone">
+                <h3>Order Summary</h3>
+              </div>
+              <h5 id="Items"></h5>
+              <div class="checkonee">
+               <h3 id="TotalCart"></h3>
+              </div>
+               <button id="checkOutBtn" style="margin:0 auto;">
+               <svg style="width:24px;height:24px" viewBox="0 0 24 24" id="cart">
+               <path fill="#000000" d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z" />
+               </svg>
+               <span>Checkout</span>
+               <svg id="check" style="width:24px;height:24px" viewBox="0 0 24 24">
+               <path stroke-width="2" fill="none" stroke="#ffffff" d="M 3,12 l 6,6 l 12, -12"/>
+               </svg>
+               </button>
+            </div>
+            </div>
+            </div>
+    </div>   
+    </div>
+</section>
+
+
+      <!-- footer -->
+      <section class="end">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 mb-sm-2 col-sm-12">
+                    <div class="end-img">
+                        <img src="media/pngwing.com_2.png" alt="">
+                    </div>
+                    <p>Elementum nisi quis eleifend quam adipiscing. Cursus metus lorem aliquam eleifend mi in nulla posuere sollicitudin lorem.</p>
+                    <div class="first-iconset">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-sm-2 col-sm-12">
+          
+                    <h5>Contact information</h5>
+            
+                    <div class="cinfo"><i class="fa-solid fa-phone"></i> <p>+20 112 113 3410<br> +20 128 012 1253</p></div> 
+                    <div class="cinfo"><i class="fa-solid fa-location-dot"></i><p>211 Lehner Valleys Apt. 287<br> Harrisstad</p></div>
+                    <div class="cinfo"><i class="fa-solid fa-clock"></i><p>Jhin's@gmail.site<br>  store@cannabis.site</p></div>
+
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-sm-2 col-sm-12">
+                    <h5>shop products</h5>
+                    <div class="sp">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">furniture</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">electronics</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">clothes</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">Art</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <a href="">shop all</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-sm-2 col-sm-12">
+                    <h5>instagram</h5>
+                    <div class="row last-album">
+                        <div class="col col-xl-4 col-lg-6 col-md-4 col-sm-4"><img src="media/Shop/Carpet1.jpg" alt=""></div>
+                        <div class="col col-xl-4 col-lg-6 col-md-4 col-sm-4"><img src="media/Shop/Controller2.jpg" alt=""></div>
+                        <div class="col col-xl-4 col-lg-6 col-md-4 col-sm-4"><img src="media/Shop/Sofa4.jpg" alt=""></div>
+                        <div class="col col-xl-4 col-lg-6 col-md-4 col-sm-4"><img src="media/Shop/lamp1.jpg" alt=""></div>
+                        <div class="col col-xl-4 col-lg-6 col-md-4 col-sm-4"><img src="media/Shop/Wagha-Chair2.png" alt=""></div>
+                        <div class="col col-xl-4 col-lg-6 col-md-4 col-sm-4"><img src="media/Shop/shoes4.jpg" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/cart.js"></script>  
+</body>
+</html>

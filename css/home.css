@@ -1,0 +1,616 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("bootstrap.min.css");
+@import url("animate.css");
+
+.container-x{
+    width: 85%;
+    margin: auto;
+}
+
+.TheInvisible{
+    display: none;
+  }
+
+body{
+    font-family: sans-serif;
+    background-color: #ffffff;
+    
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    min-height: 100vh;
+}
+h1,h2,h3,p{
+    margin: 0;
+}
+h1,h2,h3{
+    text-transform: capitalize;
+    font-weight: 800;
+}
+ul {
+  list-style: none !important;
+  text-decoration: none !important;
+}
+li{
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+img {
+    max-width: 100%;
+}
+header{
+    background-color: rgb(255, 247, 247);
+    background-size: cover ;
+    height: 100px;
+    padding: 20px 10px;
+  }
+  .navi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navi img{
+    max-width: 100px;
+    max-height: 60px;
+}
+
+.nav-item a{
+   position: relative;
+   color: black;
+   margin-right: 25px;
+   font-size: 16px;
+    font-weight: 500;
+    padding: 12px 16px;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+.nav-item a::after{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    right: 0;
+    width: 0px;
+    height: 2px;
+    background:linear-gradient(to left ,#ffffff,#000000);
+    transition: all .5s;
+}
+.nav-item a:hover::after{
+    width:80%;
+}
+.cart{
+    position: relative;
+}
+#noi{
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    padding:2px 10px;
+    background-color: rgb(255, 85, 0);
+    border-radius: 50%;
+}
+/* -----------firsthome----------- */
+.firsthome{
+    height: 700px;
+    text-align: center;
+}
+
+.change{
+    transition: all .5s;
+}
+.firsthome .firsthomecontent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    margin: 15px 25px;
+    text-align: start;
+}
+.firsthomecontent span{
+    text-transform: uppercase;
+    color:#e4573d;
+    font-weight: 400;
+    font-size: 24px;
+}
+.firsthomecontent h1{
+    color:#333333;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 64px;
+}
+.firsthomecontent p{
+    font-size: 18px;
+    line-height: 36px;
+    color: #333;
+    margin: 7px 0 22px;
+    width: 83%;
+    font-weight: 400;
+}
+.cha1{
+    padding:5px;
+    border: 1px solid transparent;
+    background-color: #e52e06;
+    border-radius: 50%;
+    transition: all .5s;
+}
+.chha2{
+    padding:5px 20px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: #e52e06;
+}
+
+/* ----------airpods--------------- */
+.airpods{
+    height: 600px;
+    background-color: rgb(222, 135, 200);
+}
+.airpods h1{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(48, 48, 48);
+}
+.airpods-img,.home-img{
+    transform: scale(.8);
+    transition: all 1s;
+    cursor: pointer;
+}
+.airpods-img:hover,.home-img:hover{
+    transform: scale(.9);
+
+}
+.airpodscontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+.counter{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.counterbox{
+   
+   font-size: 40px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #c9a5ce;
+    box-shadow:  18px 18px 95px #625464,
+                 -18px -18px 95px #ffffff;
+}
+
+/* -----------btn30----------- */
+.bn632-hover {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn21 {
+    background-image: linear-gradient(
+      to right,
+      #fc6076,
+      #ff9a44,
+      #ef9d43,
+      #e75516
+    );
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+  }
+  /* ----------airpods footer line------------- */
+  .airfooter{
+    background: lavenderblush;
+    padding: 20px 10px;
+  }
+  .afl {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+  }
+  .afl img{
+    width: 50px;
+
+  }
+  /* ------------3squares--------------- */
+  .drou-box{
+    padding: 32px 37px 36px;
+    background: #ffffff;
+    border-radius: 5px;
+    color: #666;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.drou-box img{
+    width: 40px;
+}
+.TheThreeSquares .title h2{
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.TheThreeSquares .title{
+    margin: 25px 0 23px;
+}
+
+.TheThreeSquares .TheList ul{
+    padding-left: 15px
+}
+
+.TheThreeSquares .TheList li{
+    color: #444;
+    font-size: 15px;
+    list-style: disc;
+    margin: 0 0 13px;
+}
+
+.drou-box:hover{
+    box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+   
+}
+
+
+
+/* 2Blocks SECTion */
+
+
+.banner-wrap .banner-img {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.banner-wrap .banner-img-zoom a img {
+    width: 100%;
+    transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.banner-wrap .banner-content-1 {
+    position: absolute;
+    top: 12%;
+    width: 100%;
+}
+
+.banner-content-1 span {
+    color: #333333;
+}
+
+.banner-wrap .banner-content-1 span {
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.banner-content-1 h2 {
+    color: #333333;
+}
+.banner-wrap .banner-content-1 h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0 12px;
+}
+
+
+
+.btn-style-1 a {
+    background-color: #e52e06;
+    color: #ffffff;
+    padding: 8px 22px 9px;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all .3s ease 0s;
+    text-decoration: none;
+}
+
+.banner-wrap .banner-img-zoom:hover .btn-style-1 a{
+    background-color: black;
+}
+
+
+/* 2Blocks SECTion */
+
+
+/* Blogs Section */
+
+.Blogs .date img{
+    width: 20px;
+}
+
+.Blogs .date{
+    font-size: 14px;
+    color: #444;
+}
+
+
+.Blogs p{
+    margin: 0;
+}
+
+.Blogs .title h2{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 9px 0 0;
+}
+
+.Blogs .HeadTitle h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1;
+}
+
+.Blogs .HeadTitle{
+    margin-bottom: 30px;
+}
+
+.Blogs .ImgHolder{
+    overflow: hidden;
+}
+
+.Blogs .ImgHolder img{
+    transition: all .5s;
+}
+
+
+
+.Blogs .ImgHolder:hover img{
+    transform: scale(1.1);
+}
+
+
+.Blogs .title h2{
+    transition: all .5s;
+}
+
+.Blogs .title:hover h2{
+    color: #e52e06;
+}
+
+/* Blogs Section */
+/* -----------end footer----------- */
+.end{
+    padding: 40px 30px;
+    background: url(../media/dragon-scales.png);
+    background-size: cover;
+    font-family: sans-serif;
+}
+.end .row{
+    justify-content: space-evenly;
+}
+.end .end-img img{
+    max-width: 100px;
+}
+.end p{
+    line-height: 1.5;
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+    padding: 20px 15px 20px 0;
+}
+.end .first-iconset i{
+    color: #EFC360;
+    font-size: 25px;
+    margin-right: 15px;
+    padding-top: 10px;
+    transition: all .5s;
+    
+}
+.end .first-iconset i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.end h5{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom:20px ;
+}
+.cinfo{
+    display: flex;
+    align-items: center;
+  
+}
+.cinfo i{
+    color: #560675;
+    margin-right: 18px;
+    font-size: 14px;
+    padding: 10px;
+    border:1px solid transparent;
+    background-color: #EFC360;
+    border-radius: 500px;
+}
+.sp i{
+    color: #EFC360;
+    font-size: 15px;
+    padding-right: 10px;
+}
+.sp a{
+    color: white;
+    text-transform: capitalize;
+    line-height: 2.5;
+    transition: all .5s;
+    text-decoration: none;
+    
+}
+.sp a:hover{
+    color: #EFC360;
+}
+.last-album .col-xl-4{
+    padding: 15px;
+    border-radius: 12px;
+}
+.last-album img{
+    width: 100px;
+    height: 70px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+/* ----------finish------------ */
+
+.finish{
+    padding: 10px 10px;
+    background-color: white;
+}
+.finish .row{
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.finish-img{
+    text-align: end;
+}
+.finish-img img{
+    align-self: center;
+    max-width: 400px;
+}
+.finish p{
+    font-weight: 700;
+    color: #556260;
+  
+}
+.finish a{
+    color: #17563d;
+    transition: all .5s;
+}
+.finish a:hover{
+    color: #751886;
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 1200px) {
+    .firsthome {
+        height: 573px;
+        text-align: center;
+    }
+    .firsthomecontent h1 {
+        font-size: 43px;
+    }
+
+    .bn632-hover.bn21 {
+        margin: 0;
+    }
+    .firsthomecontent p {
+        margin: 0;
+    }
+
+    .airpods{
+        height: auto;
+    }
+
+    .airpods h1 {
+        font-size: 40px;
+    }
+  }
+  @media screen and (max-width: 992px){
+    .airpods h1 {
+        font-size: 30px;
+    }
+
+    .aflcontent h4{
+        font-size: 18px;
+    }
+
+    .banner-wrap .banner-content-1 {
+        top: 5%;
+    }
+
+    .banner-wrap .banner-content-1 h2{
+        margin: 3px;
+        font-size: 21px;
+    }
+    .TheThreeSquares .title h2 {
+        font-size: 17px;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .firsthomecontent h1 {
+        font-size: 29px;
+        line-height: 42px;
+    }
+
+    .firsthomecontent p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .firsthome {
+        height: 448px;
+    }
+
+    .airpods {
+        height: 308px;
+    }
+
+  }
+  @media screen and (max-width: 700px){
+    .banner-wrap .banner-content-1 h2 {
+        display: none;
+    }
+
+    .nav-link{
+        margin: 0 !important;
+    }
+
+    .firsthomecontent h1 {
+        font-size: 23px;
+    }
+    .firsthomecontent p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #noi{
+        display: none;
+    }
+    .firsthome {
+        height: 376px;
+    }
+
+    .nav-link{
+        font-size: 13px !important;
+    }
+    
+  }
+

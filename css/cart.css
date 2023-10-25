@@ -1,0 +1,438 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("bootstrap.min.css");
+.container-x{
+    width: 85%;
+    margin: auto;
+}
+
+body{
+  font-family: 'Merriweather', serif;
+  background-color: #f1f3f7;
+ 
+}
+
+img {
+    width: 100%;
+}
+/* cart nav */
+.navi{
+  display: flex;
+  direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+header{
+ background-color: purple;
+}
+.secnav{
+  padding: 0;
+}
+.navi img{
+  max-width: 100px;
+  max-height: 60px;
+}
+
+
+
+.bn632-hover {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn21 {
+  background-image: linear-gradient(
+    to right,
+    #fc6076,
+    #ff9a44,
+    #ef9d43,
+    #e75516
+  );
+  box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+
+/* ----------------------------------------------- */
+.shoppingCart{
+  padding: 20px;
+}
+.shoppingCart .cartHeader h1{
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 2rem;
+    max-width: 36em;
+}
+
+.shoppingCart .cartHeader h5{
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 1.2rem;
+}
+
+.shoppingCart .cartItem{
+    border-top: 1px solid gray;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.shoppingCart .cartItem .productInfo h3{
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 1.2rem;
+}
+
+.shoppingCart .cartItem .productInfo p{
+    color: gray;
+    font-size: 0.8rem;
+}
+
+
+.shoppingCart .cartItem .productPrice p{
+    color: #003566;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.shoppingCart .checkOut{
+    padding-left: 20px;
+}
+
+.shoppingCart .checkOut h4{
+    color: #6a6f73;
+    margin-bottom: 15px;
+}
+
+.shoppingCart .checkOut h2{
+    font-weight: 700;
+    font-size: 2.6rem;
+    color: #003566;
+    margin-bottom: 23px;
+}
+
+#CartList .TheInvisible{
+  display: none;
+}
+
+
+/* Checkout button css DO NOT TOUCH !!!!!!!!!!!!!!!!!!!!!!!! */
+
+#checkOutBtn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    display: flex;
+    align-items: center;
+    padding: 16px 20px 16px 15px;
+    height: 56px;
+    position: relative;
+    font-family: inherit;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 500;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    -webkit-tap-highlight-color: transparent;
+    transition: box-shadow 0.2s ease, background-color 150ms ease;
+    &:focus {
+      box-shadow: 0 8px 64px 16px rgba(0,0,0,0.5);
+      outline: none;
+    }
+    
+    &:hover, &:active {
+      background-color: #eee;
+    }
+  }
+  
+  #cart {
+    margin-right: 12px;
+    transform-origin: 20% 100%;
+    opacity: 1;
+  }
+  
+  @keyframes slide-up-fade {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-16px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes roll-out {
+    0% {
+      transform: translate(0) rotate(0);
+    }
+    20% {
+      transform: translate(0) rotate(-70deg);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(0) rotate(-45deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(140px) rotate(-47deg);
+      opacity: 0;
+    }
+  }
+  
+  .checked-out span {
+    animation: slide-up-fade 150ms 1;
+    animation-fill-mode: both;
+  }
+  
+  .checked-out #cart {
+    animation: roll-out 1s 1 150ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes checkmark {
+    from {
+      stroke-dashoffset: 26px;
+    }
+    to {
+      stroke-dashoffset: 0;  
+    }
+  }
+  
+  #check {
+    position: absolute;
+    left: calc(50% - 12px);
+  }
+  
+  #check path {
+    stroke-dasharray: 26px;
+    stroke-dashoffset: 26px;
+  }
+  
+  .checked-out #check path {
+    animation: checkmark 150ms 1 1150ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+  
+  .checked-out #checkOutBtn {
+    background-color: #20bf6b;
+    transition-delay: 1150ms;
+    
+  }
+
+/* Checkout button css DO NOT TOUCH !!!!!!!!!!!!!!!!!!!!!!!! */
+
+.details{
+  display: flex;
+  gap: 20px;
+
+}
+.details img{
+  width: 220px;
+  height: 180px;
+  object-fit: cover;
+}
+.details-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+
+}
+.Amount input{
+max-width: 80px;
+
+ 
+}
+.Amount,.removeCart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+
+
+}
+td h3,p{
+  font-size: 15px;
+  text-align: start;
+  text-transform: capitalize;
+}
+th{
+  text-transform: capitalize;
+}
+table{
+  margin: 20px 0;
+}
+table tr{
+  margin: 20px 0;
+}
+
+.checkOut{
+  padding: 25px;
+  border: 1px solid transparent;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  background: url(../media/sun-tornado.png);
+  background-size: cover;
+  background-position:  bottom  right;
+  height: 350px;
+  border-radius: 12px;
+  
+  
+ 
+  
+}
+.checkone {
+  border-bottom:  1px solid gray;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.checkone h2, .checkone h3,.checkone h4{
+  font-size: 16px;
+  text-align: left;
+  color: white;
+
+}
+
+.checkonee h3{
+  color: white;
+}
+
+#Items{
+  color: white;
+}
+
+h3{
+  font-weight: bold;
+}
+
+/* Delete Button */
+
+.TheDeleter{
+  border: none;
+  font-size: 23px;
+}
+
+
+
+   /* -----------end footer----------- */
+   .end{
+    padding: 40px 30px;
+    background: url(../media/dragon-scales.png);
+    background-size: cover;
+    font-family: sans-serif;
+
+}
+.end .row{
+    justify-content: space-evenly;
+}
+.end .end-img img{
+    max-width: 100px;
+}
+.end p{
+    line-height: 1.5;
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+    padding: 20px 15px 20px 0;
+}
+.end .first-iconset i{
+    color: #EFC360;
+    font-size: 25px;
+    margin-right: 15px;
+    padding-top: 10px;
+    transition: all .5s;
+    
+}
+.end .first-iconset i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.end h5{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom:20px ;
+}
+.cinfo{
+    display: flex;
+    align-items: center;
+  
+}
+.cinfo i{
+    color: #560675;
+    margin-right: 18px;
+    font-size: 14px;
+    padding: 10px;
+    border:1px solid transparent;
+    background-color: #EFC360;
+    border-radius: 500px;
+}
+.sp i{
+    color: #EFC360;
+    font-size: 15px;
+    padding-right: 10px;
+}
+.sp a{
+    color: white;
+    text-transform: capitalize;
+    line-height: 2.5;
+    transition: all .5s;
+    text-decoration: none;
+    
+}
+.sp a:hover{
+    color: #EFC360;
+}
+.last-album .col-xl-4{
+    padding: 15px;
+    border-radius: 12px;
+}
+.last-album img{
+    width: 100px;
+    height: 70px;
+    border-radius: 12px;
+    object-fit: cover;
+}

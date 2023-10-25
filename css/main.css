@@ -1,0 +1,430 @@
+@import url("bootstrap.min.css");
+@import url("fonts.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url(animate.css);
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #888;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+body{
+
+    font-family: 'Montserrat', sans-serif;
+
+   
+}
+img{
+    width: 50px;
+}
+header{
+    background-color: blueviolet;
+    background-size: cover !important;
+    height: 40px ;
+    transition: all .5s ease-in-out;
+    position: relative;
+    
+  }
+  .the-arrow{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    right: 50%;
+    width: 10px;
+    transition: all .5s;
+    font-size: 20px;
+  }
+  header:hover{
+    height: 110px;
+    opacity: 1;
+    padding: 20px 10px;
+  }
+  header:hover .the-arrow{
+    opacity: 0;
+    
+  }
+  .current{
+    background-color: #f1d26c;
+    border-radius: 8px;
+  }
+  .active{
+    border-radius: 8px;
+    transition: all .5s;
+  }
+  .active:hover{
+    background-color: #c1c1c1;
+   
+  }
+  .current:hover{
+    background-color: #f1d26c;
+  }
+  .nav {
+   
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    opacity: 0;
+    transition: all .5s;
+  }
+  header:hover .nav{
+    opacity: 1;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #6b6b6b;
+ 
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+  }
+  
+ 
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(246, 246, 246, 0.982);
+    }
+
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: rgb(255, 247, 247);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      padding: 20px;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      margin-top: 10px;
+      height: calc(35vh);
+      overflow-y: auto;
+    }
+
+  }
+  .navi{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.navi img{
+    max-width: 100px;
+    max-height: 60px;
+}
+
+.nav-item a{
+   position: relative;
+   color: black;
+   margin-right: 25px;
+   font-size: 16px;
+    font-weight: 500;
+    padding: 12px 16px;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+.nav-item a::after{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    right: 0;
+    width: 0px;
+    height: 2px;
+    background:linear-gradient(to left ,#ffffff,#000000);
+    transition: all .5s;
+}
+.nav-item a:hover::after{
+    width:80%;
+}
+.cart{
+    position: relative;
+}
+#noi{
+    position: absolute;
+    top: -5px;
+    padding:0px 7px;
+    background-color: rgb(255, 85, 0);
+    border-radius: 50%;
+}
+.searchh{
+    border-radius: 0px;
+    width: 600px;
+    padding:6.5px;
+    border: 1px solid powderblue;
+}
+
+form{
+    position: relative;
+    height: max-content;
+}
+.sicon{
+    position: absolute;
+    color: #f1f1f1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 20px;    
+    background-color: #3a0250;
+}
+/* -----------------graph cards--------------- */
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 0;
+}
+
+
+.card-container {
+    margin: 10px 0;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .card-container::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #8a408b 0%, #023738 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(10px);
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    overflow: hidden;
+  }
+  
+  .card .img-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #8a408b 0%, #023738 100% );
+    transition: scale 0.6s, rotate 0.6s, filter 1s;
+  }
+  
+  .card .img-content img {
+    width:30%;
+    fill: #212121;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    color: #e8e8e8;
+    padding: 20px 24px;
+    line-height: 1.5;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(50px);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card .content .heading {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  
+  .card:hover .content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .card:hover .img-content {
+    scale: 2.5;   
+    filter: blur(7px);
+  }
+  
+  .card:hover .img-content img {
+    fill: transparent;
+
+  }
+
+  /* ------------------------------------------------------------- */
+  
+
+.diary-shop .container-fluid .row .col-xl-2{
+
+    border-right: 1px solid black;
+}
+.diary-shop .container-fluid .row .fields{
+    padding: 30px;
+    width: 100%;
+    border-radius: 16px;
+    background:linear-gradient(to left ,rgba(5, 97, 227, 0.624),rgb(162, 24, 205))
+}
+.box{
+    display: flex;
+    flex-direction: column;
+
+}
+.fields .row{
+ padding: 10px;
+}
+.cartoon{
+   
+    justify-content: start !important;
+    align-items: center !important;
+    
+    
+}
+.stockc{
+    margin-left: 20px;
+}
+label{
+    color: white;
+}
+input{
+    border-radius: 5px;
+    padding:5px 10px;
+    width: 200px !important;
+    border: 1px solid transparent;
+}
+
+.diary-table .row{
+    justify-content: center;
+    align-items: center;
+}
+tbody{
+    text-align: center;
+}
+.btns{
+    margin-top: 23px;
+    margin-left: 50px;
+}
+.btns button{
+    padding:5px 20px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+.btns .black{
+    background-color: black;
+    color: white;
+}
+.btns .red{
+    background-color: rgb(151, 18, 18);
+
+    color: white;
+}
+
+table{
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+}
+.maint{
+    background:linear-gradient(to left ,rgba(5, 97, 227, 0.624),rgb(162, 24, 205));
+    color: aliceblue;
+}
+#useramount{
+    width: 75px;
+}
+
+
+#ProductPrice,#ProductAmount{
+    width: 100px;
+}
+
+#ProductCompany,#ProductCategory,#ProductDesc{
+    width: 140px;
+}
+#ProductName{
+    width: 120px;
+}
+th{
+    color: #fbad40;
+}
+td{
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    text-align: center;
+    color: rgb(69, 132, 69);
+}
+
+
